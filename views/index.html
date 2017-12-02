@@ -50,7 +50,7 @@
         </div>
         
         <!-- Doc Section -->
-        <div class="col-xs">
+        <div class="col-xs-9">
           <p>
               A simple tool to allow you to upload an <b>XLSX</b> excel file
               and have certain columns wiped, and others replaced with an <b>SHA512</b>
@@ -58,21 +58,25 @@
           </p>
           <p>
               <b>NOTE:</b>the entire process happens in memory, with no files being
-              stored in any temporary file store. This is to ensure that not 
-              private data is accidentally left on the server on an error. This
+              stored in any temporary file store. This is to ensure that no 
+              private data is accidentally left on the server should there be an error. This
               also means that there are size limitations placed on the files being uploaded.
           </p>
           <p>
+              If you don't like uploading servers, there's also a 
+              <a href="https://github.com/braindelay/xls-secret">python script</a>
+              that can do the same anonymisation locally.
+          </p>
+          <p>
               This is running on <em>glitch</em> so you can review the running code for this at a
-              anytime <a href="https://glitch.com/edit/#!/petal-submarine">here</a>  
-          </p>        
-    
+              anytime <a href="https://glitch.com/edit/#!/petal-submarine">here</a>.              
+          </p>
           <p>
               View the <a href="https://glitch.com/edit/#!/petal-submarine?path=README.md">README</a>
               on the underlying project for more information on the format.
               A sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.config.yml?1512225288624">config file</a>
               and a sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.xlsx?1512225281261">data file</a>  
-              are provided as an examples.
+              are also provided as an examples.
           </p>
         </div>
       </div>
@@ -84,7 +88,6 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="https://github.com/braindelay/xls-secret-server">braindelay/xls-secret-server is on github</a>
       </div>
-      
     </div>
   </nav>
  
