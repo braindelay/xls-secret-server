@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excel cleaner </title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Excel Cleaner</a>
+      </div>
+      
+    </div>
+  </nav>
+    
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+        
+          <form action="fileupload" method="post" enctype="multipart/form-data">
+             
+            <div class="form-group">
+              <label for="configFile">Config file</label>
+              <input  class="form-control-file" type="file" id="configFile" name="configFile"/>
+            </div>
+            <div class="form-group">
+              <label for="workFile">Excel file</label>
+              <input  class="form-control-file" type="file" id="workFile" name="workFile"/>
+            </div>
+      
+              <button type="submit" class="btn btn-primary">Submit</button>
+
+          </form>           
+          
+          
+        </div>
+        <div class="col-xs">
+            <p>
+              A simple tool to allow you to upload an *XLSX* excel file
+              and have certain columns wiped, and others replaced with an *SHA512*
+              key, constructed from selected fields within the file.
+          </p>
+          <p>
+          <strong>NOTE:</strong>the entire process happens in memory, with no files being
+          stored in any temporary file store. This is to ensure that not 
+          private data is accidentally left on the server on an error. This
+          also means that there are size limitations placed on the files being uploaded.
+          </p>
+                <p>
+              This is running on <em>glitch</em> so you can review the running code for this at a
+              anytime <a href="https://glitch.com/edit/#!/petal-submarine">here</a>  
+            </p>        
+    
+            <p>
+            View the <a href="https://glitch.com/edit/#!/petal-submarine?path=README.md">README</a>
+            on the underlying project for more information on the format.
+            A sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.config.yml?1512225288624">config file</a>
+            and a sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.xlsx?1512225281261">data file</a>  
+              are provided as an examples.
+            </p>
+ 
+       
+        </div>
+      </div>
+    </div>
+
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">braindelay.com</a>
+      </div>
+      
+    </div>
+  </nav>
+ 
+
+  </body>
+</html>
