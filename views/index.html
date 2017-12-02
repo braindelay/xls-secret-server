@@ -25,8 +25,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Excel Cleaner</a>
-      </div>
-      
+      </div>      
     </div>
   </nav>
     
@@ -34,10 +33,10 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-xs-3">
         
+        <!--Form section-->
+        <div class="col-xs-3">
           <form action="fileupload" method="post" enctype="multipart/form-data">
-             
             <div class="form-group">
               <label for="configFile">Config file</label>
               <input  class="form-control-file" type="file" id="configFile" name="configFile"/>
@@ -46,39 +45,35 @@
               <label for="workFile">Excel file</label>
               <input  class="form-control-file" type="file" id="workFile" name="workFile"/>
             </div>
-      
-              <button type="submit" class="btn btn-primary">Submit</button>
-
-          </form>           
-          
-          
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>                    
         </div>
+        
+        <!-- Doc Section -->
         <div class="col-xs">
-            <p>
-              A simple tool to allow you to upload an *XLSX* excel file
-              and have certain columns wiped, and others replaced with an *SHA512*
+          <p>
+              A simple tool to allow you to upload an <b>XLSX</b> excel file
+              and have certain columns wiped, and others replaced with an <b>SHA512</b>
               key, constructed from selected fields within the file.
           </p>
           <p>
-          <strong>NOTE:</strong>the entire process happens in memory, with no files being
-          stored in any temporary file store. This is to ensure that not 
-          private data is accidentally left on the server on an error. This
-          also means that there are size limitations placed on the files being uploaded.
+              <b>NOTE:</b>the entire process happens in memory, with no files being
+              stored in any temporary file store. This is to ensure that not 
+              private data is accidentally left on the server on an error. This
+              also means that there are size limitations placed on the files being uploaded.
           </p>
-                <p>
+          <p>
               This is running on <em>glitch</em> so you can review the running code for this at a
               anytime <a href="https://glitch.com/edit/#!/petal-submarine">here</a>  
-            </p>        
+          </p>        
     
-            <p>
-            View the <a href="https://glitch.com/edit/#!/petal-submarine?path=README.md">README</a>
-            on the underlying project for more information on the format.
-            A sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.config.yml?1512225288624">config file</a>
-            and a sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.xlsx?1512225281261">data file</a>  
+          <p>
+              View the <a href="https://glitch.com/edit/#!/petal-submarine?path=README.md">README</a>
+              on the underlying project for more information on the format.
+              A sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.config.yml?1512225288624">config file</a>
+              and a sample <a href="https://cdn.glitch.com/fff4e904-b261-4eae-a508-67d84514363e%2Fsample.xlsx?1512225281261">data file</a>  
               are provided as an examples.
-            </p>
- 
-       
+          </p>
         </div>
       </div>
     </div>
@@ -87,7 +82,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">braindelay.com</a>
+        <a class="navbar-brand" href="https://github.com/braindelay/xls-secret-server">braindelay/xls-secret-server is on github</a>
       </div>
       
     </div>
