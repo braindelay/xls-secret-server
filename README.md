@@ -2,6 +2,8 @@ A simple tool to allow you to upload an *XLSX* excel file
 and have certain columns wiped, and others replaced with an *SHA512*
 key, constructed from selected fields within the file.
 
+You will find a live version of this here: https://petal-submarine.glitch.me/
+
 **NOTE:** the entire process happens in memory, with no files being
 stored in any temporary file store. This is to ensure that not 
 private data is accidentally left on the server on an error. This
